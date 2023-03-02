@@ -6,7 +6,8 @@
 ;; traits
 ;;
 
-;;(impl-trait .sip-10-trait.sip-010-trait)
+(use-trait sip010-ft-trait .sip010-ft-trait.sip010-ft-trait)
+(impl-trait .sip010-ft-trait.sip010-ft-trait)
 
 
 ;; token definitions
@@ -17,7 +18,7 @@
 
 (define-fungible-token token)
 
-(define-constant TOKEN_DECIMALS 6)
+(define-constant TOKEN_DECIMALS u6)
 (define-constant TOKEN_NAME "Token name")
 (define-constant TOKEN_SYMBOL "TOKEN")
 
@@ -39,7 +40,7 @@
 ;;
 
 (define-data-var contract-owner principal tx-sender)
-(define-data-var token_uri (string-utf8 256) u"")
+(define-data-var token_uri (optional (string-utf8 256)) none)
 
 ;; data maps
 ;;
@@ -60,7 +61,7 @@
 	)
 )
 
-(define-public (set-token-uri (uri (string-utf8 256)))
+(define-public (set-token-uri (uri (optional (string-utf8 256))))
 	(begin
 	    (asserts! (is-eq tx-sender (var-get contract-owner)) ERR_ONLY_OWNER)
 		(var-set token_uri uri)
