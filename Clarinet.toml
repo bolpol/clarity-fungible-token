@@ -1,0 +1,31 @@
+[project]
+name = 'clarity-fundgible-token'
+description = ''
+authors = ["Pavel Bolhar <paul.bolhar@gmail.com>"]
+license = 'MIT'
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+
+[contracts.sip-10]
+path = 'contracts/sip-10.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.sip-010-trait]
+path = 'contracts/sip-10-trait.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.test]
+path = 'contracts/test.clar'
+clarity_version = 1
+epoch = 2.0
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
