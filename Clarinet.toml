@@ -17,6 +17,16 @@ path = 'contracts/sip010-ft-trait.clar'
 clarity_version = 1
 epoch = 2.0
 
+[contracts.erc20-trait]
+path = 'contracts/erc20-trait.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.erc-20]
+path = 'contracts/erc-20.clar'
+clarity_version = 1
+epoch = 2.0
+
 [repl.analysis]
 passes = ['check_checker']
 
