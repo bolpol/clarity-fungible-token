@@ -25,7 +25,7 @@
 (define-constant TOKEN_SYMBOL "TOKEN")
 
 (define-constant MIN_UINT u0)
-(define-constant ZERO_ADDRESS 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+(define-constant ZERO_ADDRESS tx-sender)
 
 ;; errors
 ;; sender does not have enough balance

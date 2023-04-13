@@ -1,19 +1,13 @@
 [project]
 name = 'clarity-fundgible-token'
 description = ''
-authors = ["Pavel Bolhar <paul.bolhar@gmail.com>"]
-license = 'MIT'
+authors = ['Pavlo Bolhar <paul.bolhar@gmail.com>']
 telemetry = true
 cache_dir = './.cache'
 requirements = []
 
-[contracts.sip-10]
-path = 'contracts/sip-10.clar'
-clarity_version = 1
-epoch = 2.0
-
-[contracts.sip010-ft-trait]
-path = 'contracts/sip010-ft-trait.clar'
+[contracts.erc-20]
+path = 'contracts/erc-20.clar'
 clarity_version = 1
 epoch = 2.0
 
@@ -22,8 +16,13 @@ path = 'contracts/erc20-trait.clar'
 clarity_version = 1
 epoch = 2.0
 
-[contracts.erc-20]
-path = 'contracts/erc-20.clar'
+[contracts.sip-10]
+path = 'contracts/sip-10.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.sip010-ft-trait]
+path = 'contracts/sip010-ft-trait.clar'
 clarity_version = 1
 epoch = 2.0
 

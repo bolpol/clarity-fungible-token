@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "noEmit": true
+  },
+  "include": [
+    "tests"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
