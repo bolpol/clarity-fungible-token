@@ -5,12 +5,14 @@
     "name": "Pavlo Bolhar",
     "email": "paul.bolhar@gmail.com"
   },
+  "license": "MIT",
   "repository": "https://github.com/bolpol/clarity-fundgible-token.git",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.ts",
-    "test:watch": "mocha --watch"
+    "test:watch": "mocha --watch",
+    "build": "clarinet check"
   },
   "devDependencies": {
     "@blockstack/clarity": "^0.3.15",
@@ -18,9 +20,9 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^10",
     "chai": "^4.3.7",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "ts-node": "^8.2.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "@blockstack/clarity": "^0.3.15",
